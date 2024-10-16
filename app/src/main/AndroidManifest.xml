@@ -26,10 +26,6 @@
             android:exported="false"
             android:theme="@style/Theme.PartyTools" />
         <activity
-            android:name=".fiesta"
-            android:exported="false"
-            android:theme="@style/Theme.PartyTools" />
-        <activity
             android:name=".Registrarse"
             android:exported="false" />
         <activity
