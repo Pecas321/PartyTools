@@ -22,38 +22,45 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
         android:text="PARTY TOOLS"
         android:textColor="#FF00F5"
         android:textSize="55sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/iniciarsesion_inicio"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.237" />
+        app:layout_constraintVertical_chainStyle="packed" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/iniciarsesion_inicio"
         android:layout_width="300dp"
         android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="30dp"
         android:backgroundTint="#32CD32"
         android:text="Iniciar Sesión"
         android:textColor="#000000"
         android:textSize="30sp"
-        tools:layout_editor_absoluteX="54dp"
-        tools:layout_editor_absoluteY="306dp" />
+        app:layout_constraintBottom_toTopOf="@id/button1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView" />
 
     <Button
         android:id="@+id/button1"
         android:layout_width="300dp"
         android:layout_height="80dp"
+        android:layout_marginBottom="20dp"
         android:backgroundTint="#A93BFF"
         android:text="Registrarse"
         android:textColor="#000000"
         android:textSize="30sp"
-        tools:layout_editor_absoluteX="54dp"
-        tools:layout_editor_absoluteY="404dp" />
-
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iniciarsesion_inicio" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

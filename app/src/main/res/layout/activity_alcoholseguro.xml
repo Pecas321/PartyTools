@@ -25,14 +25,14 @@
         android:layout_width="300dp"
         android:layout_height="80dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="#4CAF50"
         android:text="Calculadora de Alcohol"
         android:textColor="@android:color/black"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.632"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/titleTextView" />
 
@@ -54,14 +54,14 @@
         android:layout_width="300dp"
         android:layout_height="80dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="28dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="#9C27B0"
         android:text="Guía de bebidas"
         android:textColor="@android:color/black"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.632"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/calculatorDescription" />
 
@@ -82,14 +82,14 @@
         android:layout_width="300dp"
         android:layout_height="80dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="48dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="#FFC107"
         android:text="¿Qué Hacer en Caso de Emergencia?"
         android:textColor="@android:color/black"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.632"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/guideDescription" />
 
@@ -105,12 +105,4 @@
         app:layout_constraintStart_toStartOf="@id/emergencyButton"
         app:layout_constraintTop_toBottomOf="@id/emergencyButton" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:weightSum="4"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="16dp"/>
-
-</androidx.constraintlayout.widget.ConstraintLayout>dget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
