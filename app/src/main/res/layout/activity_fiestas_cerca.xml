@@ -9,7 +9,7 @@
         tools:context=".FiestasCerca">
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/button_chapinero"
             android:layout_width="293dp"
             android:layout_height="75dp"
             android:layout_marginTop="36dp"
@@ -44,7 +44,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/button4_chapinero"
             android:layout_width="293dp"
             android:layout_height="75dp"
             android:layout_marginTop="36dp"
