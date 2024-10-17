@@ -21,7 +21,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/calculatorButton"
+        android:id="@+id/Buttontquila"
         android:layout_width="300dp"
         android:layout_height="80dp"
         android:layout_marginStart="16dp"
@@ -44,10 +44,10 @@
         android:text="Descubre cuanto alcohol hay en tu sangre"
         android:textAlignment="center"
         android:textColor="@android:color/white"
-        app:layout_constraintEnd_toEndOf="@id/calculatorButton"
+        app:layout_constraintEnd_toEndOf="@id/Buttontquila"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@id/calculatorButton"
-        app:layout_constraintTop_toBottomOf="@id/calculatorButton" />
+        app:layout_constraintStart_toStartOf="@id/Buttontquila"
+        app:layout_constraintTop_toBottomOf="@id/Buttontquila" />
 
     <Button
         android:id="@+id/guideButton"

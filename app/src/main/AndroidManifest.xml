@@ -13,6 +13,9 @@
         android:theme="@style/Theme.PartyTools"
         tools:targetApi="31">
         <activity
+            android:name=".recetacocteles"
+            android:exported="false" />
+        <activity
             android:name=".Cocteles"
             android:exported="false" />
         <activity
