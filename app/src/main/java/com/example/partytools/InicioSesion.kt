@@ -14,17 +14,21 @@ class InicioSesion : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_inicio_sesion)
 
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
-        }
-
+        // Botón "Registrarse" para volver a MainActivity
         val volver_iniciosesion = findViewById<Button>(R.id.registrarse_main)
         volver_iniciosesion.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java) // Cambia a MainActivity
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
-            finish() // Opcional: cierra esta actividad si no quieres volver a ella
+            finish() // Cierra la actividad actual
+        }
+
+        // Botón "Iniciar Sesión" para ir a Inicio.kt
+        val iniciarSesionButton = findViewById<Button>(R.id.iniciarsesion_inicio)
+        iniciarSesionButton.setOnClickListener {
+            val intent = Intent(this, Inicio::class.java)
+            startActivity(intent)
+            // Opcional: puedes cerrar esta actividad si no quieres volver a ella
+            // finish()
         }
     }
 }
