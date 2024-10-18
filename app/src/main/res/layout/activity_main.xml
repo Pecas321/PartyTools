@@ -27,14 +27,14 @@
         android:textColor="#FF00F5"
         android:textSize="55sp"
         android:textStyle="bold|italic"
-        app:layout_constraintBottom_toTopOf="@+id/iniciarsesion_inicio"
+        app:layout_constraintBottom_toTopOf="@+id/registrarse_registrarse"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_chainStyle="packed" />
 
     <Button
-        android:id="@+id/iniciarsesion_inicio"
+        android:id="@+id/registrarse_registrarse"
         android:layout_width="300dp"
         android:layout_height="80dp"
         android:layout_marginTop="16dp"
@@ -43,13 +43,13 @@
         android:text="Iniciar Sesión"
         android:textColor="#000000"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@id/volver_iniciosesion"
+        app:layout_constraintBottom_toTopOf="@id/registrarse_main"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textView" />
 
     <Button
-        android:id="@+id/volver_iniciosesion"
+        android:id="@+id/registrarse_main"
         android:layout_width="300dp"
         android:layout_height="80dp"
         android:layout_marginBottom="20dp"
@@ -61,6 +61,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/iniciarsesion_inicio" />
+        app:layout_constraintTop_toBottomOf="@id/registrarse_registrarse" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
