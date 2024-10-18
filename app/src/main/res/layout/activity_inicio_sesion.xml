@@ -77,7 +77,7 @@
     </androidx.cardview.widget.CardView>
 
     <Button
-        android:id="@+id/iniciarsesion_inicio"
+        android:id="@+id/registrarse_registrarse"
         android:layout_width="300dp"
         android:layout_height="70dp"
         android:layout_margin="50dp"
@@ -100,6 +100,6 @@
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/iniciarsesion_inicio" />
+        app:layout_constraintTop_toBottomOf="@+id/registrarse_registrarse" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

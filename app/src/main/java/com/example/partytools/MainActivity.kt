@@ -4,8 +4,6 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import android.widget.Button
 
 class MainActivity : AppCompatActivity() {
@@ -15,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
-        val buttonIniciarSesion = findViewById<Button>(R.id.iniciarsesion_inicio)
+        val buttonIniciarSesion = findViewById<Button>(R.id.registrarse_registrarse)
         buttonIniciarSesion.setOnClickListener {
             val intent = Intent(this, InicioSesion::class.java)
             startActivity(intent)
