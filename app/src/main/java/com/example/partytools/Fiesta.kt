@@ -1,20 +1,28 @@
 package com.example.partytools
 
+import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import android.widget.Button
+import androidx.activity.enableEdgeToEdge
 
 class Fiesta : AppCompatActivity() {
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_fiesta)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+
+        // Encontrar el botón por su ID
+        val buttonFiestasCerca = findViewById<Button>(R.id.button_fiestasCerca)
+
+        // Asignar la acción para iniciar la nueva actividad
+        buttonFiestasCerca.setOnClickListener {
+            val intent = Intent(this, FiestasCerca::class.java)
+            startActivity(intent)
         }
     }
 }
