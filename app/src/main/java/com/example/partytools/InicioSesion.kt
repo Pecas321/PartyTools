@@ -27,8 +27,6 @@ class InicioSesion : AppCompatActivity() {
         iniciarSesionButton.setOnClickListener {
             val intent = Intent(this, Inicio::class.java)
             startActivity(intent)
-            // Opcional: puedes cerrar esta actividad si no quieres volver a ella
-            // finish()
         }
     }
 }

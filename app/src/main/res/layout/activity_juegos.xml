@@ -10,7 +10,7 @@
         android:id="@+id/titleTextView"
         android:layout_width="336dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="50dp"
         android:text="Hola Cabito ¡Diviertete con nuestros juegos!"
         android:textAlignment="center"
         android:textColor="#FF00FF"

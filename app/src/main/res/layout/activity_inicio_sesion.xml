@@ -24,15 +24,15 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
         android:text="Iniciar Sesión"
         android:textColor="#FF00F5"
         android:textSize="55sp"
         android:textStyle="bold|italic"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="20dp"
         app:layout_constraintBottom_toTopOf="@+id/backgroundView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_chainStyle="packed" />
 
     <androidx.cardview.widget.CardView
@@ -77,7 +77,7 @@
     </androidx.cardview.widget.CardView>
 
     <Button
-        android:id="@+id/registrarse_registrarse"
+        android:id="@+id/iniciarsesion_inicio"
         android:layout_width="300dp"
         android:layout_height="70dp"
         android:layout_margin="50dp"
@@ -94,12 +94,14 @@
         android:layout_width="300dp"
         android:layout_height="70dp"
         android:layout_margin="30dp"
+        android:layout_marginTop="50dp"
         android:backgroundTint="#A93BFF"
         android:text="Volver"
         android:textColor="#000000"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/registrarse_registrarse" />
+        app:layout_constraintTop_toBottomOf="@+id/iniciarsesion_inicio" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

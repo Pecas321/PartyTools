@@ -22,7 +22,7 @@
             android:name=".Cocteles"
             android:exported="false" />
         <activity
-            android:name=".juegos"
+            android:name=".Juegos"
             android:exported="false" />
         <activity
             android:name=".Alcoholseguro"
