@@ -6,7 +6,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#000000"
-        tools:context=".FiestasCerca">
+        tools:context=".F_Cerca">
 
     <Button
         android:id="@+id/button_Candelaria"

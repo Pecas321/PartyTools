@@ -23,7 +23,7 @@ class Registrarse : AppCompatActivity() {
         // Configurar el OnClickListener para el botón de volver
         val volverButton = findViewById<Button>(R.id.volver_registrarse)
         volverButton.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, Main::class.java)
             startActivity(intent)
             finish() // Opcional: cerrar esta actividad si no quieres volver a ella
         }

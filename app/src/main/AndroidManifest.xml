@@ -13,13 +13,13 @@
         android:theme="@style/Theme.PartyTools"
         tools:targetApi="31">
         <activity
-            android:name=".Juegosdemesa"
+            android:name=".J_Demesa"
             android:exported="false" />
         <activity
-            android:name=".coctelessinalcochol"
+            android:name=".C_Sinalcohol"
             android:exported="false" />
         <activity
-            android:name=".recetacocteles"
+            android:name=".C_Recetas"
             android:exported="false" />
         <activity
             android:name=".Cocteles"
@@ -31,23 +31,23 @@
             android:name=".Alcoholseguro"
             android:exported="false" />
         <activity
-            android:name=".FiestasCerca"
+            android:name=".F_Cerca"
             android:exported="false" />
         <activity
             android:name=".Inicio"
             android:exported="false" />
         <activity
-            android:name=".Fiesta"
+            android:name=".Fiestas"
             android:exported="false"
             android:theme="@style/Theme.PartyTools" />
         <activity
             android:name=".Registrarse"
             android:exported="false" />
         <activity
-            android:name=".InicioSesion"
+            android:name=".Iniciosesion"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Main"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

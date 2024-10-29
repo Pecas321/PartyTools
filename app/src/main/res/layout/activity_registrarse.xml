@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".InicioSesion">
+    tools:context=".Iniciosesion">
 
     <ImageView
         android:id="@+id/imageView3"
@@ -39,7 +39,7 @@
         android:id="@+id/backgroundView"
         android:layout_width="312dp"
         android:layout_height="265dp"
-        android:layout_margin="40dp"
+        android:layout_margin="60dp"
         app:cardBackgroundColor="#FFFFFF"
         app:cardCornerRadius="30dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -95,7 +95,7 @@
         android:id="@+id/registrarse_registrarse"
         android:layout_width="300dp"
         android:layout_height="70dp"
-        android:layout_margin="50dp"
+        android:layout_margin="80dp"
         android:layout_marginTop="8dp"
         android:backgroundTint="#32CD32"
         android:text="Registrarse"
