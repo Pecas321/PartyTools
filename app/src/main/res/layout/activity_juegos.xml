@@ -22,7 +22,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/Buttontquila"
+        android:id="@+id/Juegos_mesa"
         android:layout_width="300dp"
         android:layout_height="80dp"
         android:layout_marginStart="16dp"
@@ -38,7 +38,7 @@
         app:layout_constraintTop_toBottomOf="@id/Juegodemesa" />
 
     <TextView
-        android:id="@+id/calculatorDescription"
+        android:id="@+id/texto_juegosmesa"
         android:layout_width="292dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
@@ -46,13 +46,13 @@
         android:textAlignment="center"
         android:textColor="@android:color/white"
         android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="@id/Buttontquila"
+        app:layout_constraintEnd_toEndOf="@id/Juegos_mesa"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@id/Buttontquila"
-        app:layout_constraintTop_toBottomOf="@id/Buttontquila" />
+        app:layout_constraintStart_toStartOf="@id/Juegos_mesa"
+        app:layout_constraintTop_toBottomOf="@id/Juegos_mesa" />
 
     <Button
-        android:id="@+id/guideButton"
+        android:id="@+id/Juegos_Alcohol"
         android:layout_width="300dp"
         android:layout_height="80dp"
         android:layout_marginStart="16dp"
@@ -65,10 +65,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.632"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/calculatorDescription" />
+        app:layout_constraintTop_toBottomOf="@id/texto_juegosmesa" />
 
     <TextView
-        android:id="@+id/guideDescription"
+        android:id="@+id/texto_juegosalcohol"
         android:layout_width="292dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
@@ -76,28 +76,28 @@
         android:textAlignment="center"
         android:textColor="@android:color/white"
         android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="@id/guideButton"
-        app:layout_constraintStart_toStartOf="@id/guideButton"
-        app:layout_constraintTop_toBottomOf="@id/guideButton" />
+        app:layout_constraintEnd_toEndOf="@id/Juegos_Alcohol"
+        app:layout_constraintStart_toStartOf="@id/Juegos_Alcohol"
+        app:layout_constraintTop_toBottomOf="@id/Juegos_Alcohol" />
 
-    <Button
-        android:id="@+id/emergencyButton"
-        android:layout_width="300dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="44dp"
-        android:layout_marginEnd="16dp"
-        android:backgroundTint="#FFC107"
-        android:text="Descubre juegos"
-        android:textColor="@android:color/black"
-        android:textSize="22sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.632"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/guideDescription" />
+        <Button
+            android:id="@+id/Descubre_juegos"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="#FFC107"
+            android:text="Descubre juegos"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.632"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/texto_juegosalcohol" />
 
     <TextView
-        android:id="@+id/emergencyDescription"
+        android:id="@+id/texto_descubrejuegos"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
@@ -105,9 +105,9 @@
         android:textAlignment="center"
         android:textColor="@android:color/white"
         android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="@id/emergencyButton"
-        app:layout_constraintStart_toStartOf="@id/emergencyButton"
-        app:layout_constraintTop_toBottomOf="@id/emergencyButton" />
+        app:layout_constraintEnd_toEndOf="@id/Descubre_juegos"
+        app:layout_constraintStart_toStartOf="@id/Descubre_juegos"
+        app:layout_constraintTop_toBottomOf="@id/Descubre_juegos" />
 
     <TextView
         android:id="@+id/textView17"

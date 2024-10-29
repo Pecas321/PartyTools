@@ -6,14 +6,14 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import android.widget.ImageView
 
-class J_Demesa : AppCompatActivity() {
+class J_Conalcohol : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_juegosdemesa)
+        setContentView(R.layout.activity_jconalcohol)
 
-        // Boton volver a Juegos
-        val volverButton = findViewById<ImageView>(R.id.Volver_juegosdemesa)
+        // Boton Volver a Juegos
+        val volverButton = findViewById<ImageView>(R.id.Volver_jconalcohol)
         volverButton.setOnClickListener {
             val intent = Intent(this, Juegos::class.java)
             startActivity(intent)
