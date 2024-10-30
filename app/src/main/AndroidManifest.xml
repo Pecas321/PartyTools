@@ -13,6 +13,9 @@
         android:theme="@style/Theme.PartyTools"
         tools:targetApi="31">
         <activity
+            android:name=".F_Comunidad"
+            android:exported="false" />
+        <activity
             android:name=".J_Descubre"
             android:exported="false" />
         <activity

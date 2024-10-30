@@ -126,7 +126,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/Juegos_mesa"
+        android:id="@+id/button_Recetas"
         android:layout_width="300dp"
         android:layout_height="80dp"
         android:layout_marginStart="16dp"
@@ -150,13 +150,13 @@
         android:textAlignment="center"
         android:textColor="@android:color/white"
         android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="@id/Juegos_mesa"
+        app:layout_constraintEnd_toEndOf="@id/button_Recetas"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@id/Juegos_mesa"
-        app:layout_constraintTop_toBottomOf="@id/Juegos_mesa" />
+        app:layout_constraintStart_toStartOf="@id/button_Recetas"
+        app:layout_constraintTop_toBottomOf="@id/button_Recetas" />
 
     <Button
-        android:id="@+id/Juegos_Alcohol"
+        android:id="@+id/button_sinalcohol"
         android:layout_width="300dp"
         android:layout_height="80dp"
         android:layout_marginStart="16dp"
@@ -180,8 +180,8 @@
         android:textAlignment="center"
         android:textColor="@android:color/white"
         android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="@id/Juegos_Alcohol"
-        app:layout_constraintStart_toStartOf="@id/Juegos_Alcohol"
-        app:layout_constraintTop_toBottomOf="@id/Juegos_Alcohol" />
+        app:layout_constraintEnd_toEndOf="@id/button_sinalcohol"
+        app:layout_constraintStart_toStartOf="@id/button_sinalcohol"
+        app:layout_constraintTop_toBottomOf="@id/button_sinalcohol" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

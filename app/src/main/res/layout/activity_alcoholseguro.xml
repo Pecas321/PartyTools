@@ -1,7 +1,6 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/black">
@@ -10,7 +9,7 @@
         android:id="@+id/textView17"
         android:layout_width="410dp"
         android:layout_height="88dp"
-        android:layout_marginBottom="4dp"
+        android:layout_marginBottom="2dp"
         android:background="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -111,7 +110,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView10" />
 
     <TextView
-        android:id="@+id/Juegodemesa"
+        android:id="@+id/text_alcoholseguro"
         android:layout_width="336dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -125,7 +124,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/Juegos_mesa"
+        android:id="@+id/button_calculadora"
         android:layout_width="300dp"
         android:layout_height="80dp"
         android:layout_marginStart="16dp"
@@ -138,23 +137,23 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/Juegodemesa" />
+        app:layout_constraintTop_toBottomOf="@id/text_alcoholseguro" />
 
     <TextView
-        android:id="@+id/texto_juegosmesa"
-        android:layout_width="292dp"
-        android:layout_height="56dp"
+        android:id="@+id/text_calculadora"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
         android:layout_marginTop="4dp"
         android:text="Descubre cuanto alcohol hay en tu sangre"
         android:textAlignment="center"
         android:textColor="@android:color/white"
-        app:layout_constraintEnd_toEndOf="@id/Juegos_mesa"
+        app:layout_constraintEnd_toEndOf="@id/button_calculadora"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@id/Juegos_mesa"
-        app:layout_constraintTop_toBottomOf="@id/Juegos_mesa" />
+        app:layout_constraintStart_toStartOf="@id/button_calculadora"
+        app:layout_constraintTop_toBottomOf="@id/button_calculadora" />
 
     <Button
-        android:id="@+id/Juegos_Alcohol"
+        android:id="@+id/button_bebidas"
         android:layout_width="300dp"
         android:layout_height="80dp"
         android:layout_marginStart="16dp"
@@ -167,22 +166,22 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/texto_juegosmesa" />
+        app:layout_constraintTop_toBottomOf="@id/text_calculadora" />
 
     <TextView
-        android:id="@+id/texto_juegosalcohol"
-        android:layout_width="292dp"
-        android:layout_height="56dp"
+        android:id="@+id/texto_buttonbebidas"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
         android:layout_marginTop="4dp"
         android:text="Descubre que bebidas son las que te prenden mas rapido y a un menor precio"
         android:textAlignment="center"
         android:textColor="@android:color/white"
-        app:layout_constraintTop_toBottomOf="@id/Juegos_Alcohol"
-        app:layout_constraintStart_toStartOf="@id/Juegos_Alcohol"
-        app:layout_constraintEnd_toEndOf="@id/Juegos_Alcohol" />
+        app:layout_constraintTop_toBottomOf="@id/button_bebidas"
+        app:layout_constraintStart_toStartOf="@id/button_bebidas"
+        app:layout_constraintEnd_toEndOf="@id/button_bebidas" />
 
     <Button
-        android:id="@+id/Descubre_juegos"
+        android:id="@+id/Button_emergencias"
         android:layout_width="300dp"
         android:layout_height="80dp"
         android:layout_marginStart="16dp"
@@ -195,18 +194,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/texto_juegosalcohol" />
+        app:layout_constraintTop_toBottomOf="@id/texto_buttonbebidas" />
 
     <TextView
-        android:id="@+id/texto_descubrejuegos"
+        android:id="@+id/texto_emergencias"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:text="Infórmate sobre los pasos a seguir si surge un problema"
         android:textAlignment="center"
         android:textColor="@android:color/white"
-        app:layout_constraintEnd_toEndOf="@id/Descubre_juegos"
-        app:layout_constraintStart_toStartOf="@id/Descubre_juegos"
-        app:layout_constraintTop_toBottomOf="@id/Descubre_juegos" />
+        app:layout_constraintEnd_toEndOf="@id/Button_emergencias"
+        app:layout_constraintStart_toStartOf="@id/Button_emergencias"
+        app:layout_constraintTop_toBottomOf="@id/Button_emergencias" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

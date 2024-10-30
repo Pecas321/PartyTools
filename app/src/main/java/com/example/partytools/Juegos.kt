@@ -13,14 +13,14 @@ class Juegos : AppCompatActivity() {
         setContentView(R.layout.activity_juegos)
 
         // Botón a J_Demesa
-        val buttonTquila = findViewById<Button>(R.id.Juegos_mesa)
+        val buttonTquila = findViewById<Button>(R.id.button_Recetas)
         buttonTquila.setOnClickListener {
             val intent = Intent(this, J_Demesa::class.java)
             startActivity(intent)
         }
 
         // Botón a J_Conalcohol
-        val buttonAlcohol = findViewById<Button>(R.id.Juegos_Alcohol)
+        val buttonAlcohol = findViewById<Button>(R.id.button_sinalcohol)
         buttonAlcohol.setOnClickListener {
             val intent = Intent(this, J_Conalcohol::class.java)
             startActivity(intent)

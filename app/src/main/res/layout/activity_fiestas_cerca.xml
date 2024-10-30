@@ -8,45 +8,55 @@
         android:background="#000000"
         tools:context=".F_Cerca">
 
-    <Button
+        <ImageView
+            android:id="@+id/Volver_fiestascerca"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginEnd="312dp"
+            android:rotation="180"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.025"
+            app:srcCompat="@drawable/icono_volver" />
+
+        <Button
         android:id="@+id/button_Candelaria"
         android:layout_width="293dp"
         android:layout_height="75dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginTop="12dp"
         android:backgroundTint="#FFA500"
         android:text="Puente Aranda"
         android:textColor="#000000"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/button7"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_kennedy" />
 
     <Button
         android:id="@+id/button_chapinero"
         android:layout_width="293dp"
         android:layout_height="75dp"
-        android:layout_marginTop="108dp"
+        android:layout_marginTop="80dp"
         android:backgroundTint="#83D02A"
         android:text="Chapinero"
         android:textColor="#000000"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/button_kennedy"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
     <TextView
-            android:id="@+id/textView5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="52dp"
-            android:text="Fiestas Cerca"
-            android:textColor="#FDFDFD"
-            android:textSize="45sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Fiestas Cerca"
+        android:textColor="#FDFDFD"
+        android:textSize="45sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textView6"
@@ -64,27 +74,27 @@
         android:id="@+id/button_kennedy"
         android:layout_width="293dp"
         android:layout_height="75dp"
-        android:layout_marginBottom="12dp"
+        android:layout_marginTop="16dp"
         android:backgroundTint="#A93BFF"
         android:text="Kennedy"
         android:textColor="#000000"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/button_Candelaria"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.449"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_chapinero" />
 
     <Button
         android:id="@+id/button7"
         android:layout_width="293dp"
         android:layout_height="75dp"
-        android:layout_marginBottom="120dp"
+        android:layout_marginTop="15dp"
         android:text="Candelaria"
         android:textColor="#000000"
         android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_Candelaria"
         tools:backgroundTint="#007FFF" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
