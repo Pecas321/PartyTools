@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="genero_options">
+        <item>Masculino</item>
+        <item>Femenino</item>
+    </string-array>
+
+    <string-array name="bebida_options">
+        <item>Cerveza (5%)</item>
+        <item>Vino (12%)</item>
+        <item>Licor (40%)</item>
+        <item>Otro</item>
+    </string-array>
+</resources>

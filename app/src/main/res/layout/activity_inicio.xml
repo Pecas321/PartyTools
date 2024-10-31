@@ -104,16 +104,16 @@
 
     <!-- Botón "Alcohol Seguro" centrado debajo de Fiestas -->
     <Button
-        android:id="@+id/buttonAlcoholSeguro"
+        android:id="@+id/buttonAlcohol"
         android:layout_width="260dp"
         android:layout_height="82dp"
+        android:layout_marginTop="20dp"
         android:backgroundTint="#A93BFF"
-        android:text="Alcohol Seguro"
+        android:text="Alcohol"
         android:textColor="#000000"
         android:textSize="30sp"
-        app:layout_constraintTop_toBottomOf="@id/buttonFiestas"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="20dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonFiestas" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

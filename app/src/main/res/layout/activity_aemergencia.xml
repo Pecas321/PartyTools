@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".A_Emergencia">
+
+    <TextView
+        android:id="@+id/text_emergencia"
+        android:layout_width="280dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="100dp"
+        android:text="¿Qué Hacer en Caso de Emergencia?"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/Volver_aemergencia"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="312dp"
+        android:rotation="180"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.025"
+        app:srcCompat="@drawable/icono_volver" />
+
+    <TextView
+        android:id="@+id/text_ayuda"
+        android:layout_width="380dp"
+        android:layout_height="400dp"
+        android:gravity="center"
+        android:text="Si una persona que ha consumido alcohol empieza a vomitar, lo primero es colocarla de lado para evitar que se atragante. Asegúrate de que respire bien y no la dejes sola. Ofrece agua en pequeños sorbos si es posible, pero no la obligues a beber más. No le des alcohol ni medicamentos, y si muestra signos de intoxicación grave como dificultad para respirar o confusión, busca ayuda médica de inmediato."
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_emergencia"
+        app:layout_constraintVertical_bias="0.173" />
+</androidx.constraintlayout.widget.ConstraintLayout>
