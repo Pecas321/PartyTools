@@ -1,12 +1,15 @@
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/black">
+    android:background="#000000"
+    tools:context=".A_Calculadora">
 
     <ImageView
-        android:id="@+id/Volver_acalculadora"
+        android:id="@+id/Volver_calculadora"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginEnd="312dp"
@@ -17,111 +20,74 @@
         app:layout_constraintVertical_bias="0.025"
         app:srcCompat="@drawable/icono_volver" />
 
-    <TextView
-        android:id="@+id/Juegodemesa"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:text="Calculadora de Alcohol"
-        android:textAlignment="center"
-        android:textColor="@android:color/white"
-        android:textSize="28sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/positionInput"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="88dp"
-        android:layout_marginEnd="16dp"
-        android:backgroundTint="@android:color/darker_gray"
-        android:hint="Sexo"
-        android:textColor="@android:color/white"
-        android:textColorHint="@android:color/darker_gray"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/Juegodemesa" />
-
-    <EditText
-        android:id="@+id/minutesPlayedInput"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:backgroundTint="@android:color/darker_gray"
-        android:hint="Peso"
-        android:inputType="number"
-        android:textColor="@android:color/white"
-        android:textColorHint="@android:color/darker_gray"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@id/positionInput"
-        app:layout_constraintStart_toStartOf="@id/positionInput"
-        app:layout_constraintTop_toBottomOf="@id/positionInput" />
-
-    <EditText
-        android:id="@+id/goalsInput"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:backgroundTint="@android:color/darker_gray"
-        android:hint="Tipo de bebida"
-        android:inputType="number"
-        android:textColor="@android:color/white"
-        android:textColorHint="@android:color/darker_gray"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@id/minutesPlayedInput"
-        app:layout_constraintStart_toStartOf="@id/minutesPlayedInput"
-        app:layout_constraintTop_toBottomOf="@id/minutesPlayedInput" />
-
-    <EditText
-        android:id="@+id/assistsInput"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:backgroundTint="@android:color/darker_gray"
-        android:hint="Número de bebidas"
-        android:inputType="number"
-        android:textColor="@android:color/white"
-        android:textColorHint="@android:color/darker_gray"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@id/goalsInput"
-        app:layout_constraintStart_toStartOf="@id/goalsInput"
-        app:layout_constraintTop_toBottomOf="@id/goalsInput" />
-
-    <EditText
-        android:id="@+id/passAccuracyInput"
-        android:layout_width="306dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="28dp"
-        android:backgroundTint="@android:color/darker_gray"
-        android:hint="Tiempo transcurrido desde el consumo"
-        android:inputType="numberDecimal"
-        android:textColor="@android:color/white"
-        android:textColorHint="@android:color/darker_gray"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@id/assistsInput"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@id/assistsInput"
-        app:layout_constraintTop_toBottomOf="@id/assistsInput" />
-
-    <Button
-        android:id="@+id/calculateButton"
-        android:layout_width="300dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="40dp"
-        android:backgroundTint="#4CAF50"
-        android:text="Calcular"
-        android:textSize="24sp"
-        android:textColor="@android:color/black"
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="363dp"
+        android:layout_height="343dp"
+        android:background="#020202"
+        android:orientation="vertical"
+        android:padding="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.536">
+
+        <EditText
+            android:id="@+id/etPeso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Peso (kg)"
+            android:inputType="numberDecimal"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/etCantidad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Cantidad de bebida (ml)"
+            android:inputType="numberDecimal"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/etGraduacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Graduación alcohólica (%)"
+            android:inputType="numberDecimal"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnCalcular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#4CAF50"
+            android:text="Calcular Alcohol" />
+
+        <TextView
+            android:id="@+id/tvResultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:textColor="#FAFAFA"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_CalculadoraA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Calculadora de Alcohol"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.811" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

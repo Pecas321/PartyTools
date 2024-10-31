@@ -28,9 +28,9 @@ class Inicio : AppCompatActivity() {
             val intent = Intent(this, Fiestas::class.java)
             startActivity(intent)
         }
-        val buttonAlcoholSeguro = findViewById<Button>(R.id.buttonAlcoholSeguro)
+        val buttonAlcoholSeguro = findViewById<Button>(R.id.buttonAlcohol)
         buttonAlcoholSeguro.setOnClickListener {
-            val intent = Intent(this, Alcoholseguro::class.java)
+            val intent = Intent(this, Alcohol::class.java)
             startActivity(intent)
         }
     }
