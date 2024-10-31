@@ -56,6 +56,7 @@ Actualmente, la aplicación se encuentra en fase de desarrollo inicial. Las cara
 
 - **Daniel Salinas** - *Desarrollador Principal*
 - **Brayan Castelblanco** - *SubDesarrollador*
-- **Jhonatan Muñoz** - *Desarrollador*
+- **Jhonatan Muñoz** - *SubDesarrollador*
+
 [GitHub](https://github.com/Pecas321)  
 [Email](mailto:danielc.salinasr@utadeo.edu.co)
