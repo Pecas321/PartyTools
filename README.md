@@ -36,17 +36,6 @@ Party Tools es una aplicación móvil diseñada para asistir a los usuarios en l
 
 ---
 
-## Instalación
-
-Para instalar y ejecutar la aplicación en tu entorno local:
-
-**Clona el repositorio:**
-   ```bash
-   git clone https://github.com/tu-usuario/party-tools.git
-   cd party-tools
-
----
-
 ## Uso
 
 1. **Registro e Inicio de Sesión**: Los usuarios pueden registrarse y configurar sus preferencias.
