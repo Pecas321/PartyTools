@@ -18,7 +18,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
-        android:id="@+id/fiesta_juegos"
+        android:id="@+id/icono_fiesta_cocteles"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_marginTop="3dp"
@@ -29,7 +29,7 @@
         app:srcCompat="@drawable/pngtreegift_party_decoration_white_balloons_5790391" />
 
     <ImageView
-        android:id="@+id/imageView8"
+        android:id="@+id/icono_alcohol_cocteles"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_marginTop="3dp"
@@ -40,7 +40,7 @@
         app:srcCompat="@drawable/icono_cerveza" />
 
     <ImageView
-        android:id="@+id/imageView9"
+        android:id="@+id/icono_juegos_cocteles"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_marginTop="3dp"
@@ -51,7 +51,7 @@
         app:srcCompat="@drawable/icono_dado" />
 
     <ImageView
-        android:id="@+id/imageView10"
+        android:id="@+id/icono_cocteles_cocteles"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_marginTop="3dp"
@@ -62,7 +62,7 @@
         app:srcCompat="@drawable/icono_coctel" />
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/textofiestacoctelese"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="3dp"
@@ -71,10 +71,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.099"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fiesta_juegos" />
+        app:layout_constraintTop_toBottomOf="@+id/icono_fiesta_cocteles" />
 
     <TextView
-        android:id="@+id/textView14"
+        android:id="@+id/textoalcoholcocteles"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="3dp"
@@ -84,10 +84,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.37"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+        app:layout_constraintTop_toBottomOf="@+id/icono_alcohol_cocteles" />
 
     <TextView
-        android:id="@+id/textView15"
+        android:id="@+id/textojuegoscocteles"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="3dp"
@@ -96,10 +96,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.649"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+        app:layout_constraintTop_toBottomOf="@+id/icono_juegos_cocteles" />
 
     <TextView
-        android:id="@+id/textView16"
+        android:id="@+id/textococtelescocteles"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="2dp"
@@ -108,7 +108,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.907"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+        app:layout_constraintTop_toBottomOf="@+id/icono_cocteles_cocteles" />
 
     <TextView
         android:id="@+id/Juegodemesa"

@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/black"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="¿Qué Hacer en Caso\nde Emergencia?"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="16dp"/>
+
+    <ScrollView
+        android:layout_width="358dp"
+        android:layout_height="529dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="4dp"
+            android:text="Si una persona que ha consumido alcohol empieza a vomitar, lo primero es colocarla de lado para evitar que se atragante. Asegúrate de que respire bien y no la dejes sola. Ofrece agua en pequeños sorbos si es posible, pero no la obligues a beber más. No le des alcohol ni medicamentos, y si muestra signos de intoxicación grave como dificultad para respirar o confusión, busca ayuda médica de inmediato."
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+    </ScrollView>
+
+</LinearLayout>
