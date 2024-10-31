@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="#000000"
+    tools:context=".AgregarComunidad">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="380dp"
+        android:layout_height="149dp"
+        android:layout_marginTop="76dp"
+        android:gravity="center"
+        android:text="Agregar a la Comunidad de Reuniones"
+        android:textColor="#FFFFFF"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
