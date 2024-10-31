@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import android.widget.Button
+import android.widget.ImageView
 
 class Juegos : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,6 +31,27 @@ class Juegos : AppCompatActivity() {
         val buttonDescubre = findViewById<Button>(R.id.Descubre_juegos)
         buttonDescubre.setOnClickListener {
             val intent = Intent(this, J_Descubre::class.java)
+            startActivity(intent)
+        }
+
+        // Botón para ir a Fiestas
+        val iconoFiestasJuegos = findViewById<ImageView>(R.id.icono_fiesta_juegos)
+        iconoFiestasJuegos.setOnClickListener {
+            val intent = Intent(this, Fiestas::class.java)
+            startActivity(intent)
+        }
+
+        // Botón para ir a Alcohol
+        val iconoAlcoholJuegos = findViewById<ImageView>(R.id.icono_alcohol_juegos)
+        iconoAlcoholJuegos.setOnClickListener {
+            val intent = Intent(this, Alcohol::class.java)
+            startActivity(intent)
+        }
+
+        // Botón para ir a Cocteles
+        val iconoCoctelesJuegos = findViewById<ImageView>(R.id.icono_cocteles_juegos)
+        iconoCoctelesJuegos.setOnClickListener {
+            val intent = Intent(this, Cocteles::class.java)
             startActivity(intent)
         }
     }
