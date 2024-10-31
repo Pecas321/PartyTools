@@ -8,11 +8,9 @@ Party Tools es una aplicación móvil diseñada para asistir a los usuarios en l
 
 - [Características](#características)
 - [Tecnologías Utilizadas](#tecnologías-utilizadas)
-- [Instalación](#instalación)
 - [Uso](#uso)
 - [Contribución](#contribución)
 - [Estado del Proyecto](#estado-del-proyecto)
-- [Licencia](#licencia)
 - [Autores](#autores)
 
 ---
