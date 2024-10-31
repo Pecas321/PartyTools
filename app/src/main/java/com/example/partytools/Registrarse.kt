@@ -3,37 +3,45 @@ package com.example.partytools
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
-import androidx.activity.enableEdgeToEdge
+import android.widget.EditText
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import com.google.firebase.auth.FirebaseAuth
 
 class Registrarse : AppCompatActivity() {
+
+    private lateinit var auth: FirebaseAuth
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContentView(R.layout.activity_registrarse)
 
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
-        }
+        auth = FirebaseAuth.getInstance()
 
-        // Configurar el OnClickListener para el botón de volver
-        val volverButton = findViewById<Button>(R.id.volver_registrarse)
-        volverButton.setOnClickListener {
-            val intent = Intent(this, Main::class.java)
-            startActivity(intent)
-            finish() // Opcional: cerrar esta actividad si no quieres volver a ella
-        }
-
-        // Configurar el OnClickListener para el botón de registrarse
+        val emailEditText = findViewById<EditText>(R.id.editTextTextEmailAddress2)
+        val passwordEditText = findViewById<EditText>(R.id.editTextTextPassword2)
         val registrarseButton = findViewById<Button>(R.id.registrarse_registrarse)
+
+        // Botón para registrar un nuevo usuario
         registrarseButton.setOnClickListener {
-            val intent = Intent(this, Inicio::class.java) // Cambia a Inicio
-            startActivity(intent)
-            finish() // Opcional: cerrar esta actividad si no quieres volver a ella
+            val email = emailEditText.text.toString()
+            val password = passwordEditText.text.toString()
+
+            if (email.isNotEmpty() && password.isNotEmpty()) {
+                auth.createUserWithEmailAndPassword(email, password)
+                    .addOnCompleteListener(this) { task ->
+                        if (task.isSuccessful) {
+                            Toast.makeText(this, "Registro exitoso", Toast.LENGTH_SHORT).show()
+                            val intent = Intent(this, Main::class.java)
+                            startActivity(intent)
+                            finish()
+                        } else {
+                            Toast.makeText(this, "Error en el registro: ${task.exception?.message}", Toast.LENGTH_LONG).show()
+                        }
+                    }
+            } else {
+                Toast.makeText(this, "Por favor completa todos los campos", Toast.LENGTH_SHORT).show()
+            }
         }
     }
 }

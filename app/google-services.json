@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "519960979178",
+    "project_id": "partytools",
+    "storage_bucket": "partytools.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:519960979178:android:72ac8ea2e4b6567bc85993",
+        "android_client_info": {
+          "package_name": "com.example.partytools"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLmEknlts3zW4ViwzUDfJDZNlPh1zdIg8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
