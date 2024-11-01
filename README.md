@@ -8,11 +8,9 @@ Party Tools es una aplicación móvil diseñada para asistir a los usuarios en l
 
 - [Características](#características)
 - [Tecnologías Utilizadas](#tecnologías-utilizadas)
-- [Instalación](#instalación)
 - [Uso](#uso)
 - [Contribución](#contribución)
 - [Estado del Proyecto](#estado-del-proyecto)
-- [Licencia](#licencia)
 - [Autores](#autores)
 
 ---
@@ -57,5 +55,8 @@ Actualmente, la aplicación se encuentra en fase de desarrollo inicial. Las cara
 ## Autores
 
 - **Daniel Salinas** - *Desarrollador Principal*
+- **Brayan Castelblanco** - *SubDesarrollador*
+- **Jhonatan Muñoz** - *SubDesarrollador*
+
 [GitHub](https://github.com/Pecas321)  
 [Email](mailto:danielc.salinasr@utadeo.edu.co)
