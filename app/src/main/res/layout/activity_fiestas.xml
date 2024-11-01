@@ -22,7 +22,7 @@
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_marginTop="3dp"
-        android:background="#222222"
+        android:background="#555555"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.082"
         app:layout_constraintStart_toStartOf="parent"
@@ -38,7 +38,7 @@
         app:layout_constraintHorizontal_bias="0.373"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textView17"
-        app:srcCompat="@drawable/icono_cerveza" />
+        app:srcCompat="@drawable/icono_cerveza2" />
 
     <ImageView
         android:id="@+id/icono_juegos_fiestas"
@@ -49,7 +49,7 @@
         app:layout_constraintHorizontal_bias="0.635"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textView17"
-        app:srcCompat="@drawable/icono_dado" />
+        app:srcCompat="@drawable/icono_dado3" />
 
     <ImageView
         android:id="@+id/icono_cocteles_fiestas"
@@ -60,14 +60,14 @@
         app:layout_constraintHorizontal_bias="0.905"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textView17"
-        app:srcCompat="@drawable/icono_coctel" />
+        app:srcCompat="@drawable/icono_coctel2" />
 
     <TextView
         android:id="@+id/textofiestassfiestas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="3dp"
-        android:background="#222222"
+        android:background="#555555"
         android:text="Fiesta"
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
