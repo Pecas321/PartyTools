@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <ImageView
+        android:id="@+id/Volver_agregar_juego"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:rotation="180"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.029"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icono_volver" />
+
+    <LinearLayout
+        android:layout_width="373dp"
+        android:layout_height="509dp"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_agregar_juego">
+
+        <EditText
+            android:id="@+id/inputNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre del juego"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#808080" />
+
+        <EditText
+            android:id="@+id/inputJugadores"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Número de jugadores"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#808080" />
+
+        <EditText
+            android:id="@+id/inputEdad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Edad recomendada"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#808080" />
+
+        <EditText
+            android:id="@+id/inputReglas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Reglas"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#808080" />
+
+        <EditText
+            android:id="@+id/inputDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Descripción"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#808080" />
+
+        <Button
+            android:id="@+id/buttonAgregarJuego"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#4CAF50"
+            android:text="Agregar Juego" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_agregar_juego"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:gravity="center"
+        android:text="Agrega un nuevo juego"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Volver_agregar_juego" />
+</androidx.constraintlayout.widget.ConstraintLayout>
