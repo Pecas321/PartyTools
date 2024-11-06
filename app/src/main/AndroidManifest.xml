@@ -24,6 +24,9 @@
             android:name=".Chapinero"
             android:exported="false" />
         <activity
+            android:name=".C_Bellini"
+            android:exported="false" />
+        <activity
             android:name=".A_Emergencia"
             android:exported="false" />
         <activity

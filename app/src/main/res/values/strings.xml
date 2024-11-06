@@ -9,6 +9,9 @@
     <!-- bebidas Labels -->
     <string name="bebida_imagen">Imagen de bebida</string>
 
+    <!-- juegos Labels -->
+    <string name="juego_imagen">Imagen del juego</string>
+
     <string name="lorem_ipsum">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
         volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
