@@ -21,9 +21,6 @@
             android:name=".agregar_comunidad"
             android:exported="false" />
         <activity
-            android:name=".AgregarComunidad"
-            android:exported="false" />
-        <activity
             android:name=".Chapinero"
             android:exported="false" />
         <activity
