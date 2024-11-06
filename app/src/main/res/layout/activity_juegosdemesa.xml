@@ -37,7 +37,7 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <ImageView
-        android:id="@+id/Volver_juegosdemesa"
+        android:id="@+id/Volver_tequilaSonrise"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginEnd="312dp"

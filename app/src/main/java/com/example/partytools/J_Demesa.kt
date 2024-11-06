@@ -14,7 +14,7 @@ class J_Demesa : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_juegosdemesa)
 
-        val volverButton = findViewById<ImageView>(R.id.Volver_juegosdemesa)
+        val volverButton = findViewById<ImageView>(R.id.Volver_tequilaSonrise)
         volverButton.setOnClickListener {
             finish() // Vuelve a la actividad anterior
         }
