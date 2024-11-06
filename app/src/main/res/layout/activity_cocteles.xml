@@ -9,7 +9,7 @@
     <TextView
         android:id="@+id/textView17"
         android:layout_width="410dp"
-        android:layout_height="88dp"
+        android:layout_height="110dp"
         android:layout_marginBottom="4dp"
         android:background="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -54,9 +54,9 @@
         android:id="@+id/icono_cocteles_cocteles"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_marginTop="3dp"
+        android:layout_marginTop="24dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.905"
+        app:layout_constraintHorizontal_bias="0.92"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textView17"
         app:srcCompat="@drawable/icono_coctel2" />
@@ -183,5 +183,20 @@
         app:layout_constraintEnd_toEndOf="@id/button_sinalcohol"
         app:layout_constraintStart_toStartOf="@id/button_sinalcohol"
         app:layout_constraintTop_toBottomOf="@id/button_sinalcohol" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="66dp"
+        android:layout_height="63dp"
+        android:gravity="bottom|center"
+        android:text="."
+        android:textColor="#FFFFFF"
+        android:textSize="96sp"
+        app:layout_constraintBottom_toTopOf="@+id/icono_cocteles_cocteles"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.645"
+        app:layout_constraintStart_toEndOf="@+id/icono_juegos_cocteles"
+        app:layout_constraintTop_toTopOf="@+id/textView17"
+        app:layout_constraintVertical_bias="0.461" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
