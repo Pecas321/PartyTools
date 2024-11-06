@@ -15,6 +15,9 @@
         android:theme="@style/Theme.PartyTools"
         tools:targetApi="31">
         <activity
+            android:name=".C_Tequilasonrise"
+            android:exported="false" />
+        <activity
             android:name=".agregar_comunidad"
             android:exported="false" />
         <activity
