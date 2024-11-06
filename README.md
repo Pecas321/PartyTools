@@ -52,7 +52,7 @@ Party Tools es una aplicación móvil diseñada para asistir a los usuarios en l
 Sigue estos pasos para instalar y ejecutar la aplicación en tu dispositivo Android:
 
 1. **Clonar el repositorio**: Primero, clona el repositorio de GitHub a tu máquina local ejecutando el siguiente comando en tu terminal:
-   git clone https://github.com/Pecas321/PartyTools.git
+   git clone https://github.com/Pecas321/PartyTools
 2. **Cambiar a la rama correcta**: Si es necesario, cambia a la rama donde se encuentra la última versión funcional del proyecto. Por ejemplo:
    git checkout main
 3. **Abrir el proyecto en Android Studio**
