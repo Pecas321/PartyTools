@@ -1,5 +1,6 @@
 package com.example.partytools
 
+import agregar_comunidad
 import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageView
@@ -21,7 +22,7 @@ class F_Comunidad : AppCompatActivity() {
         // Configura el botón para ir a la actividad AgregarComunidad
         val buttonAgregarComunidad = findViewById<Button>(R.id.AgregarComunidad)
         buttonAgregarComunidad.setOnClickListener {
-            val intent = Intent(this, AgregarComunidad::class.java)
+            val intent = Intent(this, agregar_comunidad::class.java)
             startActivity(intent)
         }
     }

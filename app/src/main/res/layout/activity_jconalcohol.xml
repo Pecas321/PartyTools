@@ -23,6 +23,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <!-- Texto adicional para informar al usuario sobre el clic en la imagen -->
+    <TextView
+        android:id="@+id/text_informacion_juegos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¡Haz clic en la imagen para comprar el juego!"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/Juegosalcohol"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
     <ImageView
         android:id="@+id/Volver_jconalcohol"
         android:layout_width="80dp"
@@ -34,4 +48,14 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.025"
         app:srcCompat="@drawable/icono_volver" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewJuegosAlcohol"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/text_informacion_juegos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
