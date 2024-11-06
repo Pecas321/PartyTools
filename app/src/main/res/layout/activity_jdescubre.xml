@@ -37,8 +37,6 @@
         app:layout_constraintEnd_toEndOf="parent"/>
 
     <!-- Botón Volver -->
-
-    <!-- RecyclerView -->
     <ImageView
         android:id="@+id/Volver_jdescubre"
         android:layout_width="80dp"

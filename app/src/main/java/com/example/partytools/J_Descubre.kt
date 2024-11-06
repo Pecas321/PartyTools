@@ -3,10 +3,12 @@ package com.example.partytools
 import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageView
+import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.partytools.databinding.ActivityJdescubreBinding
 import com.google.firebase.database.*
+import androidx.recyclerview.widget.RecyclerView
 
 class J_Descubre : AppCompatActivity() {
 
@@ -33,9 +35,13 @@ class J_Descubre : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val volverboton = findViewById<ImageView>(R.id.Volver_jdescubre)
-        volverboton.setOnClickListener {
-            finish()
+        // Agregar el OnClickListener para el ImageView "Volver_jdescubre"
+        val volverButton = findViewById<ImageView>(R.id.Volver_jdescubre)
+        volverButton.setOnClickListener {
+            // Crear un intent para navegar hacia la actividad Juegos.kt
+            val intent = Intent(this, Juegos::class.java)
+            startActivity(intent)
+            finish()  // Esto cerrará la actividad actual (J_Descubre)
         }
 
         // Escuchar cambios en la base de datos
