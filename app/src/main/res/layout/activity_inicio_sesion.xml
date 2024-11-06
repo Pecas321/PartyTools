@@ -59,6 +59,7 @@
                 android:hint="Correo o Usuario"
                 android:inputType="textEmailAddress"
                 android:textColor="#000000"
+                android:textColorHint="#000000"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -72,6 +73,7 @@
                 android:hint="Contraseña"
                 android:inputType="textPassword"
                 android:textColor="#000000"
+                android:textColorHint="#000000"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress2" />

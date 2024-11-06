@@ -6,12 +6,22 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import android.widget.Button
 import android.widget.ImageView
+import android.widget.TextView
+import com.google.firebase.auth.FirebaseAuth
 
 class Juegos : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_juegos)
+
+        // Obtener el usuario autenticado de Firebase
+        val user = FirebaseAuth.getInstance().currentUser
+        val nombreUsuario = user?.displayName
+
+        // Mostrar el nombre del usuario en el TextView correspondiente
+        val textViewSaludo = findViewById<TextView>(R.id.Juegodemesa)
+        textViewSaludo.text = "Hola $nombreUsuario ¡Diviértete con nuestros juegos!"
 
         // Botón a J_Demesa
         val buttonTquila = findViewById<Button>(R.id.button_Recetas)

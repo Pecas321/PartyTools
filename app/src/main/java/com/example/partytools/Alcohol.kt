@@ -2,16 +2,26 @@ package com.example.partytools
 
 import android.content.Intent
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
-import androidx.appcompat.app.AppCompatActivity
 import android.widget.Button
 import android.widget.ImageView
+import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
+import androidx.activity.enableEdgeToEdge
+import com.google.firebase.auth.FirebaseAuth
 
 class Alcohol : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_alcohol)
+
+        // Obtener el nombre del usuario autenticado
+        val user = FirebaseAuth.getInstance().currentUser
+        val username = user?.displayName
+
+        // Mostrar el nombre en el TextView
+        val textViewAlcohol = findViewById<TextView>(R.id.text_alcoholseguro)
+        textViewAlcohol.text = "Bienvenido $username\n¡Bebe Responsablemente!"
 
         // Botón para ir a la calculadora
         val buttonCalculadora = findViewById<Button>(R.id.button_calculadora)

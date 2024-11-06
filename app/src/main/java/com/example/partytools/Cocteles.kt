@@ -4,13 +4,23 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.google.firebase.auth.FirebaseAuth
 
 class Cocteles : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cocteles)
+
+        // Obtener el usuario autenticado de Firebase
+        val user = FirebaseAuth.getInstance().currentUser
+        val nombreUsuario = user?.displayName
+
+        // Mostrar el nombre del usuario en el TextView correspondiente
+        val textViewSaludo = findViewById<TextView>(R.id.Juegodemesa)
+        textViewSaludo.text = "Hola $nombreUsuario ¡Descubre deliciosos cocteles!"
 
         // Botón para navegar a C_Recetas
         val buttonJuegosMesa = findViewById<Button>(R.id.button_Recetas)
