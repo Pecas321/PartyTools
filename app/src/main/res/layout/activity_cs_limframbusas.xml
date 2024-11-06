@@ -1,0 +1,92 @@
+<!-- res/layout/activity_cocktail_detail.xml -->
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Botón de regreso -->
+
+        <!-- Título principal -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cocteles sin alcohol"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Imagen del cóctel -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="160dp"
+                android:src="@drawable/bellini_cocktail"
+                android:scaleType="centerCrop"
+                android:contentDescription="Bellini cocktail"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="16dp"
+                android:text="Limonada Frambuesas"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <!-- Sección de Ingredientes -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ingredientes"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:lineSpacingExtra="8dp"
+            android:text="·        1 piña de tamaño medio
+·        30 ml de zumo de limón
+·        1 trocito de jengibre fresco
+·        1 litro de agua con gas
+·         azúcar al gusto"
+            android:textColor="@color/white" />
+
+        <!-- Sección de Preparación -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Preparación"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:text="Pelar la piña retirando toda la corteza, procurando conservar los jugos que pueda soltar. Trocear. Pelar y picar el jengibre. Exprimir el zumo de limón. Colocar todos los ingredientes en el vaso de una batidora o licuadora. Triturar bien hasta que quede una mezcla homogénea sin grumos. Probar el punto de dulzor y ajustar la cantidad de estevia o azúcar. Pasar por un colador o tamiz si se quiere una bebida totalmente limpia. Trasladar a una jarra y dejar enfriar en la nevera. Servir con hielo al gusto."
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</ScrollView>
