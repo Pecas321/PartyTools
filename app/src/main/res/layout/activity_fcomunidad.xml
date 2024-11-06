@@ -8,6 +8,19 @@
     android:background="#000000"
     tools:context=".F_Comunidad">
 
+    <ImageView
+        android:id="@+id/agregar_comunidad_reunion"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="208dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/Volver_fcomunidad"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mas" />
+
     <TextView
         android:id="@+id/text_fcomunidad"
         android:layout_width="wrap_content"
@@ -26,11 +39,12 @@
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginEnd="312dp"
+        android:layout_marginBottom="4dp"
         android:rotation="180"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/text_fcomunidad"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.025"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/icono_volver" />
 
     <androidx.recyclerview.widget.RecyclerView
@@ -46,16 +60,5 @@
         app:layout_constraintVertical_bias="0.0"
         tools:ignore="MissingConstraints" />
 
-    <Button
-        android:id="@+id/AgregarComunidad"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#000000"
-        android:text="+"
-        android:textSize="45sp"
-        app:layout_constraintBottom_toTopOf="@+id/text_fcomunidad"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.927"
-        app:layout_constraintStart_toEndOf="@+id/Volver_fcomunidad"
-        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
