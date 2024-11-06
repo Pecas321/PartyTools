@@ -54,6 +54,19 @@ class A_Calculadora : AppCompatActivity() {
         val gramosAlcohol = volumenAlcohol * 0.789 // 1 ml de alcohol pesa 0.789 g
         val bac = (gramosAlcohol / (peso * 1000)) * 100 // BAC en %
 
-        tvResultado.text = "Tu BAC es: %.2f".format(bac)
+        // Formato del BAC y su significado
+        val bacTexto = "Tu BAC es: %.2f%% (Concentración de Alcohol en la Sangre)".format(bac)
+
+        // Mensaje de recomendación según el nivel de BAC
+        val recomendacion = when {
+            bac >= 0.08 -> "¡Nivel muy alto! Te recomendamos dejar de beber."
+            bac >= 0.05 -> "Cuidado, tu nivel de alcohol está elevado. Considera hacer una pausa."
+            bac >= 0.03 -> "Nivel moderado. Bebe con precaución."
+            else -> "Nivel bajo de alcohol en sangre. Bebe responsablemente."
+        }
+
+        // Mostrar el BAC y la recomendación juntos
+        tvResultado.text = "$bacTexto\n$recomendacion"
     }
+
 }
