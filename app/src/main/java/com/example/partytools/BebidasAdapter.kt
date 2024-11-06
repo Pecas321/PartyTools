@@ -1,5 +1,7 @@
 package com.example.partytools
 
+import android.content.Intent
+import android.net.Uri
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -16,6 +18,13 @@ class BebidasAdapter(private val listaBebidas: List<Bebida>) : RecyclerView.Adap
             binding.precioBebida.text = "Precio: ${bebida.precio}"
             binding.saborBebida.text = "Sabor: ${bebida.sabor}"
             binding.coctelesRecomendados.text = "Cócteles: ${bebida.coctelesRecomendados}"
+
+            // Configuramos el clic en la imagen
+            binding.imagenBebida.setOnClickListener {
+                // Abrimos el navegador con la URL de la bebida
+                val intent = Intent(Intent.ACTION_VIEW, Uri.parse(bebida.url))
+                itemView.context.startActivity(intent)
+            }
         }
     }
 

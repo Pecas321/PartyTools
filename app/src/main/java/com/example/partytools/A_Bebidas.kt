@@ -16,15 +16,15 @@ class A_Bebidas : AppCompatActivity() {
         setContentView(binding.root)
 
         val listaBebidas = listOf(
-            Bebida("Cerveza", R.drawable.cerveza, "4-6%", "$8,000", "Amargo", "Michelada, Radler"),
-            Bebida("Vino", R.drawable.vino, "12-14%", "$40,000", "Frutal", "Sangría, Mimosa"),
-            Bebida("Whisky", R.drawable.whisky, "40%", "$150,000", "Amaderado", "Old Fashioned, Whisky Sour"),
-            Bebida("Ron", R.drawable.ron, "37-40%", "$90,000", "Dulce", "Mojito, Daiquiri"),
-            Bebida("Vodka", R.drawable.vodka, "40%", "$100,000", "Neutral", "Bloody Mary, Cosmopolitan"),
-            Bebida("Ginebra", R.drawable.ginebra, "37-47%", "$85,000", "Botánico", "Gin Tonic, Martini"),
-            Bebida("Brandy", R.drawable.brandy, "35-60%", "$110,000", "Dulce", "Sidecar, Brandy Alexander"),
-            Bebida("Tequila", R.drawable.tequila, "40%", "$70,000", "Fuerte", "Margarita, Tequila Sunrise"),
-            Bebida("Baileys", R.drawable.baileys, "17%", "$65,000", "Cremoso", "Irish Coffee, Mudslide")
+            Bebida("Cerveza", R.drawable.cerveza, "4-6%", "$8,000", "Amargo", "Michelada, Radler","https://www.exito.com/vinos-y-licores/cerveza"),
+            Bebida("Vino", R.drawable.vino, "12-14%", "$40,000", "Frutal", "Sangría, Mimosa","https://www.exito.com/vinos-y-licores/vinos"),
+            Bebida("Whisky", R.drawable.whisky, "40%", "$150,000", "Amaderado", "Old Fashioned, Whisky Sour","https://www.exito.com/vinos-y-licores/whisky"),
+            Bebida("Ron", R.drawable.ron, "37-40%", "$90,000", "Dulce", "Mojito, Daiquiri","https://www.exito.com/vinos-y-licores/ron"),
+            Bebida("Vodka", R.drawable.vodka, "40%", "$100,000", "Neutral", "Bloody Mary, Cosmopolitan","https://www.exito.com/vinos-y-licores/vodka"),
+            Bebida("Ginebra", R.drawable.ginebra, "37-47%", "$85,000", "Botánico", "Gin Tonic, Martini","https://www.exito.com/vinos-y-licores/ginebra"),
+            Bebida("Brandy", R.drawable.brandy, "35-60%", "$110,000", "Dulce", "Sidecar, Brandy Alexander","https://www.exito.com/vinos-y-licores/brandy"),
+            Bebida("Tequila", R.drawable.tequila, "40%", "$70,000", "Fuerte", "Margarita, Tequila Sunrise","https://www.exito.com/vinos-y-licores/tequila"),
+            Bebida("Baileys", R.drawable.baileys, "17%", "$65,000", "Cremoso", "Irish Coffee, Mudslide","https://www.exito.com/baileys")
         )
 
         val bebidasAdapter = BebidasAdapter(listaBebidas)
