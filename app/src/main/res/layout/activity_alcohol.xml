@@ -32,22 +32,23 @@
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_marginTop="3dp"
+        android:background="#555555"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.373"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textView17"
-        app:srcCompat="@drawable/icono_cerveza" />
+        app:srcCompat="@drawable/icono_cerveza2" />
 
     <ImageView
         android:id="@+id/icono_juegos_alcohol"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_marginTop="3dp"
+        android:layout_marginTop="4dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.635"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textView17"
-        app:srcCompat="@drawable/icono_dado" />
+        app:srcCompat="@drawable/icono_dado3" />
 
     <ImageView
         android:id="@+id/icono_cocteles_alcohol"
@@ -58,7 +59,7 @@
         app:layout_constraintHorizontal_bias="0.905"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textView17"
-        app:srcCompat="@drawable/icono_coctel" />
+        app:srcCompat="@drawable/icono_coctel2" />
 
     <TextView
         android:id="@+id/textofiestaacohol"
@@ -77,6 +78,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="3dp"
+        android:background="#555555"
         android:gravity="center"
         android:text="Alcohol"
         android:textColor="#FFFFFF"
@@ -89,7 +91,7 @@
         android:id="@+id/textojuegosalcohol"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="3dp"
+        android:layout_marginTop="4dp"
         android:text="Juegos"
         android:textColor="#FBFBFB"
         app:layout_constraintEnd_toEndOf="parent"
@@ -133,7 +135,7 @@
         android:backgroundTint="#4CAF50"
         android:text="Calculadora de Alcohol"
         android:textColor="@android:color/black"
-        android:textSize="20sp"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
@@ -147,6 +149,7 @@
         android:text="Descubre cuanto alcohol hay en tu sangre"
         android:textAlignment="center"
         android:textColor="@android:color/white"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="@id/button_calculadora"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@id/button_calculadora"
@@ -162,7 +165,7 @@
         android:backgroundTint="#9C27B0"
         android:text="Guía de bebidas"
         android:textColor="@android:color/black"
-        android:textSize="20sp"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
@@ -176,9 +179,10 @@
         android:text="Descubre que bebidas son las que te prenden mas rapido y a un menor precio"
         android:textAlignment="center"
         android:textColor="@android:color/white"
-        app:layout_constraintTop_toBottomOf="@id/button_bebidas"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@id/button_bebidas"
         app:layout_constraintStart_toStartOf="@id/button_bebidas"
-        app:layout_constraintEnd_toEndOf="@id/button_bebidas" />
+        app:layout_constraintTop_toBottomOf="@id/button_bebidas" />
 
     <Button
         android:id="@+id/Button_emergencias"
@@ -190,7 +194,7 @@
         android:backgroundTint="#FFC107"
         android:text="¿Qué Hacer en Caso de Emergencia?"
         android:textColor="@android:color/black"
-        android:textSize="20sp"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
@@ -204,6 +208,7 @@
         android:text="Infórmate sobre los pasos a seguir si surge un problema"
         android:textAlignment="center"
         android:textColor="@android:color/white"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="@id/Button_emergencias"
         app:layout_constraintStart_toStartOf="@id/Button_emergencias"
         app:layout_constraintTop_toBottomOf="@id/Button_emergencias" />

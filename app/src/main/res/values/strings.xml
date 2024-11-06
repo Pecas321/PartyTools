@@ -6,23 +6,8 @@
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 
-    <!-- Alcohol Calculator Labels -->
-    <string name="title_calculadora">Calculadora de Alcohol</string>
-    <string name="hint_peso">Peso (kg)</string>
-    <string name="hint_cantidad">Cantidad de bebida (ml)</string>
-    <string name="hint_graduacion">Graduación alcohólica (%)</string>
-    <string name="hint_genero">Género</string>
-    <string name="option_masculino">Masculino</string>
-    <string name="option_femenino">Femenino</string>
-    <string name="hint_tiempo_transcurrido">Tiempo desde la ingesta (horas)</string>
-    <string name="label_tipo_bebida">Tipo de bebida</string>
-    <string name="option_cerveza">Cerveza (5%)</string>
-    <string name="option_vino">Vino (12%)</string>
-    <string name="option_licor">Licor (40%)</string>
-    <string name="option_otro">Otro</string>
-    <string name="button_calcular">Calcular Alcohol</string>
-    <string name="label_resultado">Tu BAC es: %.2f</string>
-    <string name="error_valores_invalidos">Por favor, ingresa valores válidos.</string>
+    <!-- bebidas Labels -->
+    <string name="bebida_imagen">Imagen de bebida</string>
 
     <string name="lorem_ipsum">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
