@@ -1,4 +1,3 @@
-// Registrarse.kt
 package com.example.partytools
 
 import android.content.Intent

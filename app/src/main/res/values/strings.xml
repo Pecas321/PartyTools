@@ -12,6 +12,9 @@
     <!-- juegos Labels -->
     <string name="juego_imagen">Imagen del juego</string>
 
+    <string name="default_web_client_id">519960979178-3ufq7pk8stm6rirpda5tr419ggudtnlp.apps.googleusercontent.com</string>
+
+
     <string name="lorem_ipsum">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
         volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus

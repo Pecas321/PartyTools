@@ -64,5 +64,10 @@ class Juegos : AppCompatActivity() {
             val intent = Intent(this, Cocteles::class.java)
             startActivity(intent)
         }
+        val btusuariojuegos = findViewById<ImageView>(R.id.usuario_juegos)
+        btusuariojuegos.setOnClickListener {
+            val intent = Intent(this, Usuario::class.java)
+            startActivity(intent)
+        }
     }
 }

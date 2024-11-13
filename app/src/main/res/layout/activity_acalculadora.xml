@@ -23,16 +23,27 @@
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="363dp"
-        android:layout_height="343dp"
+        android:layout_height="500dp"
+        android:layout_marginTop="30dp"
         android:background="#020202"
         android:orientation="vertical"
         android:padding="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.536">
+        app:layout_constraintTop_toBottomOf="@+id/text_CalculadoraA">
 
+        <!-- EditText para Fecha -->
+        <EditText
+            android:id="@+id/etFecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Selecciona la fecha"
+            android:inputType="none"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF" />
+
+
+        <!-- EditText para Peso -->
         <EditText
             android:id="@+id/etPeso"
             android:layout_width="match_parent"
@@ -42,6 +53,14 @@
             android:textColor="#FFFFFF"
             android:textColorHint="#FFFFFF" />
 
+        <!-- Spinner para seleccionar tipo de bebida -->
+        <Spinner
+            android:id="@+id/spinnerBebida"
+            android:layout_width="330dp"
+            android:layout_height="42dp"
+            android:textColor="#FFFFFF"/>
+
+        <!-- EditText para Cantidad de bebida -->
         <EditText
             android:id="@+id/etCantidad"
             android:layout_width="match_parent"
@@ -51,6 +70,7 @@
             android:textColor="#FFFFFF"
             android:textColorHint="#FFFFFF" />
 
+        <!-- EditText para Graduación alcohólica -->
         <EditText
             android:id="@+id/etGraduacion"
             android:layout_width="match_parent"
@@ -60,34 +80,38 @@
             android:textColor="#FFFFFF"
             android:textColorHint="#FFFFFF" />
 
+        <!-- Botón Calcular -->
         <Button
             android:id="@+id/btnCalcular"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="#4CAF50"
-            android:text="Calcular Alcohol" />
+            android:gravity="center"
+            android:text="Calcular Alcohol"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
 
+        <!-- Texto para mostrar el resultado -->
         <TextView
             android:id="@+id/tvResultado"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="332dp"
+            android:layout_height="125dp"
             android:paddingTop="16dp"
             android:textColor="#FAFAFA"
             android:textSize="18sp" />
     </LinearLayout>
 
+    <!-- Título de la Calculadora -->
     <TextView
         android:id="@+id/text_CalculadoraA"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:gravity="center"
         android:text="Calculadora de Alcohol"
         android:textColor="#FFFFFF"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.811" />
-
+        app:layout_constraintTop_toBottomOf="@+id/Volver_calculadora" />
 </androidx.constraintlayout.widget.ConstraintLayout>

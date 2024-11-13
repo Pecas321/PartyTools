@@ -4,13 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/black">
+    android:background="@android:color/black"
+    android:fitsSystemWindows="true">
+
+    <ImageView
+        android:id="@+id/usuario_juegos"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/usuario3" />
 
     <TextView
         android:id="@+id/Juegodemesa"
         android:layout_width="336dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:text="Hola Cabito ¡Diviertete con nuestros juegos!"
         android:textAlignment="center"
         android:textColor="#FF00FF"
@@ -19,14 +31,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/usuario_juegos" />
 
     <Button
         android:id="@+id/button_Recetas"
         android:layout_width="300dp"
         android:layout_height="80dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="#4CAF50"
         android:text="Juegos de mesa"
@@ -41,7 +53,6 @@
         android:id="@+id/texto_juegosmesa"
         android:layout_width="292dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
         android:text="Revisa si tienes alguno de estos increibles juegos!"
         android:textAlignment="center"
         android:textColor="@android:color/white"
@@ -55,7 +66,7 @@
         android:layout_width="300dp"
         android:layout_height="80dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="#9C27B0"
         android:text="Juegos con Alcohol"
@@ -70,7 +81,6 @@
         android:id="@+id/texto_juegosalcohol"
         android:layout_width="292dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
         android:text="Aburridos? Descubre juegos para animar fiestas con tus amigos."
         android:textAlignment="center"
         android:textColor="@android:color/white"
@@ -84,7 +94,7 @@
         android:layout_width="300dp"
         android:layout_height="80dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="#FFC107"
         android:text="Descubre juegos"
@@ -99,7 +109,6 @@
         android:id="@+id/texto_descubrejuegos"
         android:layout_width="343dp"
         android:layout_height="51dp"
-        android:layout_marginTop="4dp"
         android:text="Cansados de lo mismo siempre? Juega estos juegos que casi nadie conoce."
         android:textAlignment="center"
         android:textColor="@android:color/white"

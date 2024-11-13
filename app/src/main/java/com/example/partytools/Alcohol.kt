@@ -64,5 +64,15 @@ class Alcohol : AppCompatActivity() {
             val intent = Intent(this, Cocteles::class.java)
             startActivity(intent)
         }
+        val btusuarioalcohol = findViewById<ImageView>(R.id.usuario_alcohol)
+        btusuarioalcohol.setOnClickListener {
+            val intent = Intent(this, Usuario::class.java)
+            startActivity(intent)
+        }
+        val bthistorialbebidas = findViewById<Button>(R.id.Button_historial_bebidas)
+        bthistorialbebidas.setOnClickListener {
+            val intent = Intent(this, HistorialBebidas::class.java)
+            startActivity(intent)
+        }
     }
 }

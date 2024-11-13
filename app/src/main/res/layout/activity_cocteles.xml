@@ -4,7 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/black">
+    android:background="@android:color/black"
+    android:fitsSystemWindows="true">
+
+    <ImageView
+        android:id="@+id/usuario_cocteles"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/usuario3" />
 
     <TextView
         android:id="@+id/textView17"
@@ -114,7 +126,7 @@
         android:id="@+id/Juegodemesa"
         android:layout_width="336dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:text="Hola Cabito ¡Descubre deliciosos cocteles!"
         android:textAlignment="center"
         android:textColor="#FF00FF"
@@ -123,14 +135,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/usuario_cocteles" />
 
     <Button
         android:id="@+id/button_Recetas"
         android:layout_width="300dp"
         android:layout_height="80dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="#4CAF50"
         android:text="Receta de Cocteles"
@@ -145,7 +157,6 @@
         android:id="@+id/texto_juegosmesa"
         android:layout_width="292dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
         android:text="Descubre como preparar tus cocteles favoritos"
         android:textAlignment="center"
         android:textColor="@android:color/white"
@@ -160,7 +171,7 @@
         android:layout_width="300dp"
         android:layout_height="80dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="#9C27B0"
         android:text="Cocteles sin Alcohol"
@@ -175,7 +186,6 @@
         android:id="@+id/texto_juegosalcohol"
         android:layout_width="292dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
         android:text="Opciones refrescantes para todos los gustos."
         android:textAlignment="center"
         android:textColor="@android:color/white"

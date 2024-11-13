@@ -2,4 +2,8 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <!-- Color para la barra de estado -->
+    <color name="status_bar_color">#FF000000</color> <!-- Personaliza este color -->
+    <!-- Color para la barra de navegación -->
+    <color name="navigation_bar_color">#FF000000</color>
 </resources>

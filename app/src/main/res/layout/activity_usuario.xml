@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".Usuario"
+    android:fitsSystemWindows="true">
+
+    <!-- Título -->
+
+    <ImageView
+        android:id="@+id/Volver_usuario"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="40dp"
+        android:rotation="180"
+        app:layout_constraintEnd_toStartOf="@+id/textViewTitle"
+        app:layout_constraintHorizontal_bias="0.050"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icono_volver" />
+
+    <!-- Nombre de Usuario -->
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Mi Perfil"
+        android:textColor="#FF00F5"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Volver_usuario" />
+
+    <TextView
+        android:id="@+id/textViewUsername"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Nombre de usuario: Juan Pérez"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/textViewTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"/>
+
+    <!-- Correo -->
+    <TextView
+        android:id="@+id/textViewEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Correo: juan.perez@example.com"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/textViewUsername"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"/>
+
+    <!-- Contraseña (oculta) -->
+    <TextView
+        android:id="@+id/textViewPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Contraseña: ********"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/textViewEmail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"/>
+
+    <!-- Botón Editar Usuario -->
+    <Button
+        android:id="@+id/buttonEditUser"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Editar Usuario"
+        android:textColor="#000000"
+        android:backgroundTint="#4CAF50"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/textViewPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"/>
+
+
+    <!-- Botón Cambiar Contraseña -->
+    <Button
+        android:id="@+id/buttonChangePassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Cambiar Contraseña"
+        android:textColor="#000000"
+        android:backgroundTint="#FFC107"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/buttonEditUser"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"/>
+
+    <!-- Botón Eliminar Cuenta -->
+    <Button
+        android:id="@+id/buttonDeleteAccount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Eliminar Cuenta"
+        android:textColor="#000000"
+        android:backgroundTint="#F44336"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/buttonChangePassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"/>
+
+    <!-- Botón Cerrar Sesión -->
+    <Button
+        android:id="@+id/buttonSignOut"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Cerrar Sesión"
+        android:textColor="#000000"
+        android:backgroundTint="#FF5722"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/buttonDeleteAccount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

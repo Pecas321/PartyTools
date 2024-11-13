@@ -69,5 +69,10 @@ class Fiestas : AppCompatActivity() {
             val intent = Intent(this, Cocteles::class.java)
             startActivity(intent)
         }
+        val btusuariofiestas = findViewById<ImageView>(R.id.usuario_fiestas)
+        btusuariofiestas.setOnClickListener {
+            val intent = Intent(this, Usuario::class.java)
+            startActivity(intent)
+        }
     }
 }

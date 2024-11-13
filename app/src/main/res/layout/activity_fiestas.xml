@@ -5,7 +5,19 @@
     android:id="@+id/fondo_fiestas"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000">
+    android:background="#000000"
+    android:fitsSystemWindows="true">
+
+    <ImageView
+        android:id="@+id/usuario_fiestas"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/usuario3" />
 
     <TextView
         android:id="@+id/textView17"
@@ -114,7 +126,7 @@
         android:id="@+id/textView2"
         android:layout_width="338dp"
         android:layout_height="134dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:gravity="center"
         android:text="Bienvenido a la fiesta Cabito"
         android:textColor="#FF00F5"
@@ -123,13 +135,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/usuario_fiestas" />
 
     <Button
         android:id="@+id/button_fiestasCerca"
         android:layout_width="300dp"
         android:layout_height="80dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="40dp"
         android:backgroundTint="#32CD32"
         android:text="Fiestas cerca"
         android:textColor="#000000"
@@ -143,7 +155,7 @@
         android:id="@+id/button_ComReuniones"
         android:layout_width="300dp"
         android:layout_height="80dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="40dp"
         android:backgroundTint="#A93BFF"
         android:text="Comunidad de reuniones"
         android:textColor="#050505"
@@ -157,7 +169,6 @@
         android:id="@+id/text_fiestascerca"
         android:layout_width="324dp"
         android:layout_height="34dp"
-        android:layout_marginTop="12dp"
         android:gravity="center"
         android:text="Encuentra las fiestas mas cercanas a ti"
         android:textColor="#FFFFFF"
@@ -171,7 +182,6 @@
         android:id="@+id/text_comunidadreuniones"
         android:layout_width="307dp"
         android:layout_height="69dp"
-        android:layout_marginTop="12dp"
         android:gravity="center"
         android:text="Sin ideas? \n Encuentra inspiración aqui para tus reuniones"
         android:textColor="#FFFFFF"

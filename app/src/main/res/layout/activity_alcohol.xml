@@ -4,7 +4,47 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/black">
+    android:background="@android:color/black"
+    android:fitsSystemWindows="true">
+
+    <TextView
+        android:id="@+id/texto_emergencias"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Infórmate sobre los pasos a seguir si surge un problema"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@id/Button_emergencias"
+        app:layout_constraintStart_toStartOf="@id/Button_emergencias"
+        app:layout_constraintTop_toBottomOf="@id/Button_emergencias" />
+
+    <Button
+        android:id="@+id/Button_emergencias"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#FFC107"
+        android:text="¿Qué Hacer en Caso de Emergencia?"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/texto_buttonbebidas" />
+
+    <ImageView
+        android:id="@+id/usuario_alcohol"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/usuario3" />
 
     <TextView
         android:id="@+id/textView17"
@@ -114,22 +154,22 @@
         android:id="@+id/text_alcoholseguro"
         android:layout_width="336dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:text="Bienvenido Cabito\n¡Bebe Responsablemente!"
         android:textAlignment="center"
         android:textColor="#FF00FF"
-        android:textSize="30sp"
+        android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/usuario_alcohol" />
 
     <Button
         android:id="@+id/button_calculadora"
         android:layout_width="300dp"
-        android:layout_height="80dp"
+        android:layout_height="60dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="#4CAF50"
         android:text="Calculadora de Alcohol"
@@ -144,7 +184,6 @@
         android:id="@+id/text_calculadora"
         android:layout_width="353dp"
         android:layout_height="29dp"
-        android:layout_marginTop="4dp"
         android:text="Descubre cuanto alcohol hay en tu sangre"
         android:textAlignment="center"
         android:textColor="@android:color/white"
@@ -157,9 +196,9 @@
     <Button
         android:id="@+id/button_bebidas"
         android:layout_width="300dp"
-        android:layout_height="80dp"
+        android:layout_height="60dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="#9C27B0"
         android:text="Guía de bebidas"
@@ -174,7 +213,6 @@
         android:id="@+id/texto_buttonbebidas"
         android:layout_width="356dp"
         android:layout_height="48dp"
-        android:layout_marginTop="4dp"
         android:text="Descubre que bebidas son las que te prenden mas rapido y a un menor precio"
         android:textAlignment="center"
         android:textColor="@android:color/white"
@@ -184,33 +222,32 @@
         app:layout_constraintTop_toBottomOf="@id/button_bebidas" />
 
     <Button
-        android:id="@+id/Button_emergencias"
+        android:id="@+id/Button_historial_bebidas"
         android:layout_width="300dp"
-        android:layout_height="80dp"
+        android:layout_height="60dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="16dp"
-        android:backgroundTint="#FFC107"
-        android:text="¿Qué Hacer en Caso de Emergencia?"
+        android:backgroundTint="#4CAF50"
+        android:text="Historial Bebidas"
         android:textColor="@android:color/black"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/texto_buttonbebidas" />
+        app:layout_constraintTop_toBottomOf="@id/texto_emergencias" />
 
     <TextView
-        android:id="@+id/texto_emergencias"
+        android:id="@+id/texto_historial_bebidas"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
         android:text="Infórmate sobre los pasos a seguir si surge un problema"
         android:textAlignment="center"
         android:textColor="@android:color/white"
         android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="@id/Button_emergencias"
-        app:layout_constraintStart_toStartOf="@id/Button_emergencias"
-        app:layout_constraintTop_toBottomOf="@id/Button_emergencias" />
+        app:layout_constraintEnd_toEndOf="@id/Button_historial_bebidas"
+        app:layout_constraintStart_toStartOf="@id/Button_historial_bebidas"
+        app:layout_constraintTop_toBottomOf="@id/Button_historial_bebidas" />
 
     <TextView
         android:id="@+id/textView7"
