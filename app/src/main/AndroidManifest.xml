@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -16,13 +17,13 @@
         android:theme="@style/Theme.PartyTools"
         tools:targetApi="31">
         <activity
+            android:name=".CocktailDetailActivity"
+            android:exported="false" />
+        <activity
             android:name=".HistorialBebidas"
             android:exported="false" />
         <activity
             android:name=".changePassword"
-            android:exported="false" />
-        <activity
-            android:name=".EditEmail"
             android:exported="false" />
         <activity
             android:name=".EditUsuario"
@@ -30,11 +31,6 @@
         <activity
             android:name=".Usuario"
             android:exported="false" />
-
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="YOUR_API_KEY" />
-
         <activity
             android:name=".CS_limframbuesas"
             android:exported="false" />
@@ -98,6 +94,11 @@
         <activity
             android:name=".F_Cerca"
             android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAT5IvjiPnmzpwq8fdyZ0NydgFbNbtm8pI" />
+
         <activity
             android:name=".Inicio"
             android:exported="false" />
